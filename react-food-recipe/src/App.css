@@ -1,0 +1,14 @@
+.jumbotron {
+    background-color: rgb(50, 50, 214);
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image2.jpg');
+    background-size: cover;
+    background-position: center;*/
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin: auto;
+}
+
+.brand-icon {
+    font-size: 100px;
+}
