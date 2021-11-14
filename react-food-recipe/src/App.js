@@ -15,25 +15,28 @@ function App() {
         getRecipes();
     }, []);
 
-    
+
     const getRecipes = async() => {
         const res = await Axios.get(`https://api.edamam.com/search?q=${search}&app_id=${App_ID}&app_key=${App_key}`);
-         
-         setRecipes(res.data.hits);
-        
-        }
+
+        setRecipes(res.data.hits);
+
+    }
     const onInputChange = e => {
         setSearch(e.target.value);
     }
     const onSearchClick = () => {
         getRecipes();
     }
-    return ( <div className = "App" >
+    return ( < div className = "App" >
 
-        <Header search = { search }
+        <
+        Header search = { search }
         onInputChange = { onInputChange }
-        onSearchClick = { onSearchClick }/>
-         <div className = "container" > < Recipes recipes = { recipes }/> </div > </div >
+        onSearchClick = { onSearchClick }
+        /> <
+        div className = "container" > < Recipes recipes = { recipes }
+        /> </div > < /div >
     );
 
 }

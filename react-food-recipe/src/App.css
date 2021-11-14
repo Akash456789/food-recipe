@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: rgb(50, 50, 214);
+    background-color: rgb(255, 23, 7);
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image2.jpg');
     background-size: cover;
     background-position: center;*/
@@ -11,4 +11,45 @@
 
 .brand-icon {
     font-size: 100px;
+}
+
+@media only screen and (max-width: 450px) {
+    .btn {
+        width: 47px;
+        height: 31px;
+        font-size: 7px;
+    }
+    .display-1 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .brand-icon {
+        font-size: 50px;
+    }
+    .form-control {
+        font-size: 10px;
+    }
+    .jumbotron {
+        padding: 30px;
+    }
+    .input-group {
+        width: 80px;
+    }
+    body {
+        line-height: 16px;
+    }
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        background-color: rgb(252, 240, 185);
+        border: 0px solid;
+    }
+    .card {
+        border: 0px solid;
+    }
+    .list-group-flush>.list-group-item {
+        border-width: 0 0 0px;
+    }
 }
